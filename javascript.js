@@ -41,8 +41,15 @@ const changeSizeBtn = document.querySelector('.change-size');
 changeSizeBtn.addEventListener('click', changeSize);
 
 function changeSize() {
-    const gridSize = prompt('Enter a number between 1 and 64 to change the grid size');
-    resetGrid(gridSize);
+    let gridSize = prompt('Enter a number between 1 and 64 to change the grid size');
+    if (!gridSize) return; // Cancel or null response returns user to grid with no changes
+    gridSize = Number(gridSize);
+    if (gridSize > 0 && gridSize < 65 && Number.isInteger(gridSize)) {
+        resetGrid(gridSize);
+    } else {
+        alert('Please enter an integer between 1 - 64');
+        gridSize = changeSize();
+    }
 }
 
 // Reset button

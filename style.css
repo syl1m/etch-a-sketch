@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     flex: 1;
     margin: 0;
+    background-color:rgb(228, 213, 194);
 }
 
 .title {
@@ -38,6 +39,7 @@ body {
     margin: 0;
     display: flex;
     flex: 1;
+    background-color: white;
 }
 
 .grid {

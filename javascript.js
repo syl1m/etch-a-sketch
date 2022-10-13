@@ -43,6 +43,10 @@ function changeSize() {
     resetGrid(gridSize);
 }
 
+// Reset button
+const resetBtn = document.querySelector('.reset');
+resetBtn.addEventListener('click', () => resetGrid());
+
 // Reset Grid
 function resetGrid(n = 16) {
     grid.replaceChildren();

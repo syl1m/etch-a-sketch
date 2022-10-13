@@ -1,5 +1,6 @@
 let mouseIsDown = false;
 const grid = document.querySelector('.grid');
+const currentSize = document.querySelector('.current-size');
 setGridSize();
 
 // Create an n-by-n size grid
@@ -15,6 +16,7 @@ function setGridSize(n = 16) {
         grid.appendChild(row);
     }
     checkHover();
+    updateSizeText(n);
 }
 
 // Hover + Mousedown effect
@@ -51,4 +53,9 @@ resetBtn.addEventListener('click', () => resetGrid());
 function resetGrid(n = 16) {
     grid.replaceChildren();
     setGridSize(n);
+}
+
+// Update current grid size text
+function updateSizeText(n = 16) {
+    currentSize.textContent = `Current grid size: ${n}x${n}`;
 }

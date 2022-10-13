@@ -64,5 +64,5 @@ function resetGrid(n = 16) {
 
 // Update current grid size text
 function updateSizeText(n = 16) {
-    currentSize.textContent = `Current grid size: ${n}x${n}`;
+    currentSize.textContent = `Current Grid Size: ${n}x${n}`;
 }

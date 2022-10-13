@@ -1,5 +1,5 @@
 body {
-    font-family: cursive, 'Trebuchet MS', Roboto, 'Times New Roman', sans-serif;
+    font-family:'Trebuchet MS', Roboto, 'Times New Roman', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,6 @@ body {
 
 .footer {
     font-size: 16px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     text-align: center;
 }

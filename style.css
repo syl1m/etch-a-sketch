@@ -1,15 +1,15 @@
 body {
-    font-family:'Trebuchet MS', Roboto, 'Times New Roman', sans-serif;
+    font-family:'Indie Flower', cursive,'Trebuchet MS', Roboto, 'Times New Roman', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex: 1;
     margin: 0;
-    background-color:rgb(228, 213, 194);
+    background-color: #4980f718;
 }
 
 .title {
-    font-size: 50px;
+    font-size: 75px;
     font-weight: 700;
     text-align: center;
 }
@@ -32,7 +32,7 @@ body {
 .row {
     display: flex;
     flex: 1;
-    width: 40vw;
+    width: 35vw;
 }
 
 .col {
@@ -45,15 +45,10 @@ body {
 .grid {
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     margin: 10px;
     box-shadow: 0 12px 16px 10px rgba(102, 10, 136, 0.428), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-/* Hover Effect styling */
-.hover {
-    background-color: black;
 }
 
 /* Button styling */
@@ -67,6 +62,8 @@ button {
     padding: 10px;
     border-radius: 10px;
     transition-duration: 0.2s;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
 }
 
 button:hover {

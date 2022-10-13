@@ -33,7 +33,18 @@ function checkHover() {
 }
 
 function addHoverEffect(e) {
-    if (mouseIsDown || e.type === 'mousedown') e.target.classList.add('hover');
+    if (mouseIsDown || e.type === 'mousedown') e.target.style.backgroundColor = getRandomColor();
+}
+
+function getRandomColor() {
+    const red = getRandomRGBNumber(),
+          green = getRandomRGBNumber(),
+          blue = getRandomRGBNumber();
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function getRandomRGBNumber() {
+    return Math.floor(Math.random()*256);
 }
 
 // Change Grid Size
